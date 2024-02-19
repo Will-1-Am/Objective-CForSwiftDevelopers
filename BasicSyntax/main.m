@@ -27,6 +27,19 @@ int main(int argc, const char * argv[]) {
         if (i == 10) {
             NSLog(@"Hello, World!"); 
         }
+        
+        // When the content of a conditional statement is one line of code, the curly brackets can be omitted.  Below the former conditional is equivalent to the latter.
+        if (i == 10) {
+            NSLog(@"Hello, World!");
+        } else {
+            NSLog(@"Goodbye!");
+        }
+        
+        if (i == 10) 
+            NSLog(@"Hello, World!");
+        else
+            NSLog(@"Goodbye!");
+        
     }
     return 0;
 }
