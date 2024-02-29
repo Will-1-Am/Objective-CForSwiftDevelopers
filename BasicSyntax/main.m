@@ -59,6 +59,15 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"It's something else.");
         }
         
+        // Switching on a pattern
+        switch (j) {
+            case 1 ... 30:  // the spaces around the ellipsis are important
+                NSLog(@"It's between 1 and 30!");
+                break;
+                
+            default:
+                NSLog(@"It's something else.");
+        }
     }
     return 0;
 }
