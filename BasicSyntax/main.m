@@ -47,7 +47,7 @@ int main(int argc, const char * argv[]) {
         switch (j) {
             case 20:
                 NSLog(@"It's 20");
-                break;
+                break;  // remove the break and the code will fallthrough to the next case and so on until a break is reached;
             case 40:
                 NSLog(@"It's 40");
                 break;
