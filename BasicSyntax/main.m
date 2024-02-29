@@ -72,8 +72,8 @@ int main(int argc, const char * argv[]) {
         // Creating a new variable on the first line of a case block requires that the content case block be wrapped in curly brackets
         switch (j) {
             case 10:
-                int foo = 1;
-                NSLog(@"It's something else.");
+            { int foo = 1;
+                NSLog(@"It's something else."); }
                 break;
                 
             default:
