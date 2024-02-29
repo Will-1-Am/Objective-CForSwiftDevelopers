@@ -40,6 +40,25 @@ int main(int argc, const char * argv[]) {
         else
             NSLog(@"Goodbye!");
         
+        
+        // Switch/case - Obj-C has implicit fallthrough
+        // a basic example
+        int j = 20;
+        switch (j) {
+            case 20:
+                NSLog(@"It's 20");
+                break;
+            case 40:
+                NSLog(@"It's 40");
+                break;
+            case 60:
+                NSLog(@"It's 60");
+                break;
+                
+            default:
+                NSLog(@"It's something else.");
+        }
+        
     }
     return 0;
 }
