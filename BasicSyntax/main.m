@@ -79,6 +79,14 @@ int main(int argc, const char * argv[]) {
             default:
                 break;
         }
+        
+        
+        // Loops
+        // Fast enumeration loop type:
+        NSArray *names = @[@"Laura", @"Janet", @"Kim"]; //create an array of names
+        for (NSString *name in names) {                 // loop over the array
+            NSLog(@"Hello, %@", name);                  // print message to console for each element
+        }
     }
     return 0;
 }
