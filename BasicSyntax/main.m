@@ -85,7 +85,12 @@ int main(int argc, const char * argv[]) {
         // Fast enumeration loop type:
         NSArray *names = @[@"Laura", @"Janet", @"Kim"]; //create an array of names
         for (NSString *name in names) {                 // loop over the array
-            NSLog(@"Hello, %@", name);                  // print message to console for each element
+            NSLog(@"Hello, %@", name);                  // %@ is called a format specifier and means to "insert an object here"
+        }
+        
+        // C-style for-loops can also be used:
+        for (int i = 1; i <= 5; ++i) {
+            NSLog(@"%d * %d is %d", i, i, i * i);  // %d is another format specifier and means "int".  They are replaced by the arguments following the first argument.
         }
     }
     return 0;
